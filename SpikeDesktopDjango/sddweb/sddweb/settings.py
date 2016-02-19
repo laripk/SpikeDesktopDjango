@@ -37,7 +37,7 @@ INSTALLED_APPS = (
 	'django.contrib.sessions',
 	'django.contrib.messages',
 	'django.contrib.staticfiles',
-	'polls',
+	'sddweb.polls',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
 	'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'sddweb.urls'
+ROOT_URLCONF = 'sddweb.sddweb.urls'
 
 TEMPLATES = [
 	{
@@ -69,7 +69,7 @@ TEMPLATES = [
 	},
 ]
 
-WSGI_APPLICATION = 'sddweb.wsgi.application'
+WSGI_APPLICATION = 'sddweb.sddweb.wsgi.application'
 
 
 # Database
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'sddweb.wsgi.application'
 DATABASES = {
 	'default': {
 		'ENGINE': 'django.db.backends.sqlite3',
-		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+		'NAME': os.path.join(BASE_DIR, 'sdd_db.sqlite3'),
 	}
 }
 
